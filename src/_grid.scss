@@ -1,0 +1,50 @@
+@import "mixins";
+
+
+@media screen and (min-width: 760px){
+    
+    html {
+        width: 100%;
+
+        body{
+            width: 100%;
+
+            .container {
+                @include flex(column, start);
+                width: 100%;
+            
+                .red-section{
+                    @include flex(row, start);
+                    width: 100%;
+            
+                    .col-md-7 {
+                        width: 60%;
+                    }
+            
+                    .col-md-5 {
+                        width: 40%;
+                    }
+            
+                }
+                .middle-section{
+                    @include flex(row, start);
+
+                    .col-md-6{
+                        width: 50%;
+                    }
+                }
+                .blue-section {
+                    @include flex(row, start);
+
+                    .col-md-3 {
+                        width: 30%
+                    }
+
+                    .col-md-6{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

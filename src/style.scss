@@ -1,0 +1,43 @@
+$primary-color: rgb(245, 49, 49);
+$secondary-color: rgb(18, 18, 197);
+$third-color: rgb(249, 187, 73);
+$fouth-color: rgb(154, 36, 197);
+@import "./grid";
+
+* {
+    box-sizing: border-box;
+}
+
+.color {
+    height: 100px;
+}
+
+.large-red-box {
+    @extend .color;
+    background-color: $primary-color;
+}
+
+.small-red-box {
+    @extend .color;
+    background-color: $primary-color;
+}
+
+.orange-box {
+    height: 200px;
+    background-color: $third-color;
+}
+
+.violet-box {
+    @extend .color;
+    background-color: $fouth-color;
+}
+
+.small-blue-box {
+    @extend .color;
+    background-color: $secondary-color;
+}
+
+.large-blue-box {
+    @extend .color;
+    background-color: $secondary-color;
+}
