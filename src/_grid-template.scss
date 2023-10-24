@@ -1,0 +1,50 @@
+@import "./mixins";
+
+.container {
+    @include flex(column, start);
+    width: 100%;
+}
+
+.row {
+    @include flex(row, start);
+    width: 100%;
+}
+
+@for $i from 1 through 12 {
+    @media (min-width: 0px) {
+        .col-xs-#{$i} {
+            flex: 0 0 auto;
+            width: calc($i / 12) * 100%;
+        }
+    }
+    @media (min-width: 576px) {
+        .col-sm-#{$i} {
+            flex: 0 0 auto;
+            width: calc($i / 12) * 100%;
+        }
+    }
+    @media (min-width: 768px) {
+        .col-md-#{$i} {
+            flex: 0 0 auto;
+            width: calc($i / 12) * 100%;
+        }
+    }
+    @media (min-width: 992px) {
+        .col-lg-#{$i} {
+            flex: 0 0 auto;
+            width: calc($i / 12) * 100%;
+        }
+    }
+    @media (min-width: 1200px) {
+        .col-xl-#{$i} {
+            flex: 0 0 auto;
+            width: calc($i / 12) * 100%;
+        }
+    }
+    @media (min-width: 1200px) {
+        .col-xxl-#{$i} {
+            flex: 0 0 auto;
+            width: calc($i / 12) * 100%;
+        }
+    }
+}

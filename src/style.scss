@@ -2,7 +2,7 @@ $primary-color: rgb(245, 49, 49);
 $secondary-color: rgb(18, 18, 197);
 $third-color: rgb(249, 187, 73);
 $fouth-color: rgb(154, 36, 197);
-@import "./grid";
+@import "./grid-template";
 
 * {
     box-sizing: border-box;
